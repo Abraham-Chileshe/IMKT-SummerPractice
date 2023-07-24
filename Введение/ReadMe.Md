@@ -23,6 +23,14 @@
  до ri
  включительно. Определите, какие кегли остались стоять на месте.
 </p>
+<p>N
+pins were placed in one row, numbering them from left to right with numbers from 1
+up to N
+. Then K balls were thrown along this row
+, while the i
+-th ball knocked down all the pins with numbers from li
+to ri
+inclusive. Determine which pins are left standing in place.</p>
 
 <h5>Входные данные</h5>
 <p>Программа получает на вход количество кеглей N
