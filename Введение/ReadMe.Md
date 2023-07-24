@@ -1,4 +1,4 @@
-<h3>Задача №112149. Расстояние</h3>
+!<h3>Задача №112149. Расстояние</h3>
 <p>Напишите программу, которая вводит координаты двух точек на числовой оси и выводит расстояние между ними.</p>
 <p>Write a program that enters the coordinates of two points on a numeric axis and outputs the distance between them.</p>
 
@@ -12,7 +12,7 @@
 <p>The program should output one number: the distance between points with three signs in the fractional part.</p>
 
 
-<h3>Задача №3851. Кегельбан</h3>
+!<h3>Задача №3851. Кегельбан</h3>
 <p>N
  кеглей выставили в один ряд, занумеровав их слева направо числами от 1
  до N
