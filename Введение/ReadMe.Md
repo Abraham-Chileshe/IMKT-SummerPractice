@@ -9,4 +9,4 @@
 
 <h5>Выходные данные</h5>
 <p>Программа должна вывести одно число: расстояние между точками с тремя знаками в дробной части.</p>
-<p>Программа должна вывести одно число: расстояние между точками с тремя знаками в дробной части.</p>
+<p style="font-color:cyan">The program should output one number: the distance between points with three signs in the fractional part.</p>
