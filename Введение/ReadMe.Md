@@ -1,5 +1,5 @@
 
-<h3>Задача №112149. Расстояние</h3>
+<h1>Задача №112149. Расстояние</h1>
 <p>Напишите программу, которая вводит координаты двух точек на числовой оси и выводит расстояние между ними.</p>
 <p>Write a program that enters the coordinates of two points on a numeric axis and outputs the distance between them.</p>
 
@@ -13,7 +13,7 @@
 <p>The program should output one number: the distance between points with three signs in the fractional part.</p>
 <br/>
 
-<h3>Задача №3851. Кегельбан</h3>
+<h1>Задача №3851. Кегельбан</h1>
 <p>N
  кеглей выставили в один ряд, занумеровав их слева направо числами от 1
  до N
@@ -48,3 +48,14 @@ inclusive. Determine which pins are left standing in place.</p>
 -я кегля осталась стоять, или “.”, если j
 -я кегля была сбита.
 </p>
+
+<br/>
+<h1>Задача №112344. Строка палиндром</h1>
+<p>Напишите программу, которая определяет, является ли заданная строка (возможно, содержащая пробелы) палиндромом, то есть верно ли, что она после удаления пробелов читается одинаково слева направо и справа налево.</p>
+<p>Write a program that determines whether a given string (possibly containing spaces) is a palindrome, that is, whether it is true that after removing spaces it reads the same from left to right and from right to left</p>
+
+Входные данные
+Входная строка – последовательность символов, возможно, содержащая пробелы.
+
+Выходные данные
+Программа должна вывести слово 'YES', если введённая строка – палиндром, и слово 'NO', если она не является палиндромом.
