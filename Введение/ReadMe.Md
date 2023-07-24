@@ -1,4 +1,6 @@
-![#1589F0](<h3>Задача №112149. Расстояние</h3>)
+```diff
+! <h3>Задача №112149. Расстояние</h3>
+```
 <p>Напишите программу, которая вводит координаты двух точек на числовой оси и выводит расстояние между ними.</p>
 <p>Write a program that enters the coordinates of two points on a numeric axis and outputs the distance between them.</p>
 
