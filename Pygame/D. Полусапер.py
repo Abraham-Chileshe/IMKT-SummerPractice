@@ -49,6 +49,17 @@ class MinesweeperBoard:
     def get_cell_value(self, row, col):
         return self.board[row][col]
 
+# Chessboard class
+class Board:
+    def __init__(self):
+        self.cells = [[BLACK if (row + col) % 2 == 0 else BLACK for col in range(COLS)] for row in range(ROWS)]
+
+    def draw(self, screen):
+        for row in range(ROWS):
+            for col in range(COLS):
+                cell_rect = pg.Rect(col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+                pg.draw.rect(screen, self.cells[row][col], cell_rect)
+
 # Pygame setup
 pg.init()
 screen = pg.display.set_mode((COLS * CELL_SIZE, ROWS * CELL_SIZE))
@@ -58,6 +69,8 @@ clock = pg.time.Clock()
 # Create the Minesweeper board and place mines
 minesweeper_board = MinesweeperBoard()
 minesweeper_board.place_mines(15)
+
+board_pattern = Board()
 
 running = True
 revealed_cells = set()
@@ -77,11 +90,11 @@ while running:
 
     # Draw the board
     screen.fill(WHITE)
+    board_pattern.draw(screen)
+
     for row in range(ROWS):
         for col in range(COLS):
             cell_rect = pg.Rect(col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE)
-            # Draw the cell background
-            pg.draw.rect(screen, GREY, cell_rect)
 
             if (row, col) in revealed_cells:
                 cell_value = minesweeper_board.get_cell_value(row, col)
@@ -95,8 +108,9 @@ while running:
                     cell_text = font.render(str(cell_value), True, BLACK)
                     text_rect = cell_text.get_rect(center=cell_rect.center)
                     screen.blit(cell_text, text_rect)
-            else:
-                pg.draw.rect(screen, BLACK, cell_rect)
+
+            # Draw the grey border for each cell
+            pg.draw.rect(screen, GREY, cell_rect, 1)
 
     pg.display.flip()
     clock.tick(30)
